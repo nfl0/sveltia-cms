@@ -123,6 +123,18 @@ export const getUserCache = async () => {
     return userCache;
   }
 
+  const config = get(cmsConfig);
+  if (config?.backend?.name === 'riadchain') {
+    try {
+      const pk = localStorage.getItem('riadchain.cms.privateKey');
+      if (pk && pk.trim()) {
+        return { backendName: 'riadchain' };
+      }
+    } catch {
+      //
+    }
+  }
+
   return undefined;
 };
 

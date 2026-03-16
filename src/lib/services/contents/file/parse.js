@@ -158,8 +158,8 @@ export const parseEntryFile = async ({ text = '', path, folder: { collectionName
     return customParser(text);
   }
 
-  // Raw format: return the content as-is
-  if (format === 'raw') {
+  // Raw/text format: return the content as-is
+  if (format === 'raw' || format === 'text') {
     return { body: text };
   }
 

@@ -5,6 +5,7 @@ import test from '$lib/services/backends/fs/test';
 import gitea from '$lib/services/backends/git/gitea';
 import github from '$lib/services/backends/git/github';
 import gitlab from '$lib/services/backends/git/gitlab';
+import riadchain from '$lib/services/backends/riadchain';
 
 /**
  * @import { Readable, Writable } from 'svelte/store';
@@ -24,6 +25,7 @@ export const allBackendServices = {
   gitea,
   local,
   'test-repo': test,
+  riadchain,
 };
 
 /**

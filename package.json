@@ -66,6 +66,7 @@
     "yaml": "^2.8.2"
   },
   "devDependencies": {
+    "@rolldown/binding-linux-x64-gnu": "1.0.0-rc.9",
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
     "@types/leaflet": "^1.9.21",
     "@types/node": "^25.5.0",
